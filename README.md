@@ -93,3 +93,79 @@ The AirBnB Clone project uses a combination of technologies to handle different 
 ### 7. **Git & GitHub**
 - Version control and collaboration tools.  
 - Used to track changes, manage branches, and work collaboratively as a team.  
+
+## Database Design
+
+The AirBnB Clone project requires a well-structured database to manage users, properties, bookings, reviews, and payments. Below is an overview of the key entities and their relationships:
+
+### 1. **Users**
+Fields:  
+- `id` (Primary Key)  
+- `name`  
+- `email`  
+- `password`  
+- `phone_number`  
+
+**Relationships:**  
+- A user can have multiple properties (as a host).  
+- A user can make multiple bookings.  
+- A user can write multiple reviews.  
+
+---
+
+### 2. **Properties**
+Fields:  
+- `id` (Primary Key)  
+- `owner_id` (Foreign Key → Users.id)  
+- `title`  
+- `description`  
+- `location`  
+- `price_per_night`  
+
+**Relationships:**  
+- A property belongs to a single user (host).  
+- A property can have multiple bookings.  
+- A property can receive multiple reviews.  
+
+---
+
+### 3. **Bookings**
+Fields:  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key → Users.id)  
+- `property_id` (Foreign Key → Properties.id)  
+- `start_date`  
+- `end_date`  
+- `status`  
+
+**Relationships:**  
+- Each booking is made by a single user.  
+- Each booking is for a single property.  
+
+---
+
+### 4. **Reviews**
+Fields:  
+- `id` (Primary Key)  
+- `user_id` (Foreign Key → Users.id)  
+- `property_id` (Foreign Key → Properties.id)  
+- `rating`  
+- `comment`  
+- `created_at`  
+
+**Relationships:**  
+- Each review is written by a single user.  
+- Each review belongs to a single property.  
+
+---
+
+### 5. **Payments**
+Fields:  
+- `id` (Primary Key)  
+- `booking_id` (Foreign Key → Bookings.id)  
+- `amount`  
+- `payment_date`  
+- `payment_method`  
+
+**Relationships:**  
+- Each payment is linked to a single booking.  
