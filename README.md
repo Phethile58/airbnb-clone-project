@@ -224,3 +224,18 @@ This protects against attacks such as SQL injection or cross-site scripting (XSS
 
 **Importance:**  
 These measures collectively ensure that user data, property listings, bookings, and payments remain secure. Strong API security protects both the users and the platform from unauthorized access, fraud, and potential breaches.
+
+## CI/CD Pipeline
+
+A CI/CD (Continuous Integration / Continuous Deployment) pipeline automates the process of testing, building, and deploying the application.  
+It ensures that new code changes are integrated smoothly, tested for errors, and deployed reliably without manual intervention.
+
+### Importance for the Project
+- **Continuous Integration (CI):** Automatically runs tests whenever code is pushed to the repository, helping to catch bugs early.  
+- **Continuous Deployment (CD):** Automatically deploys verified changes to the production environment, ensuring the latest features and fixes are available to users quickly.  
+- Reduces human error, improves development speed, and maintains high-quality standards for the Airbnb Clone project.
+
+### Tools
+- **GitHub Actions:** Automates workflows directly from the GitHub repository.  
+- **Docker:** Creates consistent, isolated environments for building, testing, and deploying the application.  
+- **Travis CI / Jenkins (optional):** Alternative CI/CD platforms for automating builds and deployments.  
