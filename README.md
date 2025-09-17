@@ -59,3 +59,37 @@ Handles infrastructure, deployment, and automation.
 - Manages servers and cloud services.  
 - Sets up CI/CD pipelines.  
 - Monitors application uptime and performance.  
+
+## Technology Stack
+
+The AirBnB Clone project uses a combination of technologies to handle different aspects of development, from the backend to the frontend and database. Below is an overview of the stack and its purpose:
+
+### 1. **Python**
+- A high-level programming language used for backend logic and command-line tools.  
+- Provides flexibility and strong libraries for building APIs and handling data.  
+
+### 2. **Django**
+- A Python-based web framework.  
+- Used to build robust RESTful APIs, manage authentication, and handle backend logic efficiently.  
+
+### 3. **PostgreSQL**
+- A powerful open-source relational database.  
+- Stores application data such as users, bookings, listings, and reviews.  
+- Provides scalability, reliability, and strong query performance.  
+
+### 4. **GraphQL**
+- A query language for APIs.  
+- Allows the frontend to request exactly the data it needs, reducing over-fetching.  
+- Improves communication between frontend and backend.  
+
+### 5. **JavaScript**
+- A dynamic scripting language for client-side interactivity.  
+- Powers dynamic elements of the user interface.  
+
+### 6. **HTML & CSS**
+- Core technologies for structuring and styling the frontend.  
+- Ensures the application is visually appealing and user-friendly.  
+
+### 7. **Git & GitHub**
+- Version control and collaboration tools.  
+- Used to track changes, manage branches, and work collaboratively as a team.  
