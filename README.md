@@ -197,3 +197,30 @@ It ensures accurate transaction records and updates the booking status after pay
 ### 6. Search & Filters
 Allows users to search for properties based on location, price, and availability.  
 Filters improve user experience by helping users find suitable listings quickly.
+
+## API Security
+
+Securing backend APIs is critical to protect user data, maintain trust, and ensure safe transactions within the Airbnb Clone project. The following key security measures will be implemented:
+
+### 1. Authentication
+Users must log in with a secure account before accessing protected endpoints.  
+This ensures that only verified users can access their personal data and perform actions such as booking or listing properties.
+
+### 2. Authorization
+Different user roles (guest, host, admin) will have specific permissions.  
+Authorization prevents users from performing actions outside of their role, such as editing another user’s bookings or listings.
+
+### 3. Rate Limiting
+The API will limit the number of requests a user can make in a given time frame.  
+This helps prevent abuse, such as brute-force login attempts, and reduces server overload.
+
+### 4. Data Encryption
+Sensitive data like passwords and payment information will be encrypted both in transit (HTTPS) and at rest.  
+Encryption protects user privacy and secures financial transactions.
+
+### 5. Input Validation
+All data received by the API will be validated to prevent malicious input.  
+This protects against attacks such as SQL injection or cross-site scripting (XSS).
+
+**Importance:**  
+These measures collectively ensure that user data, property listings, bookings, and payments remain secure. Strong API security protects both the users and the platform from unauthorized access, fraud, and potential breaches.
